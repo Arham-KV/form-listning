@@ -1,0 +1,14 @@
+table {
+    border: 1px solid;
+}
+
+table.table tr th {
+    border-right: 1px solid;
+}
+
+table.table tr td {
+    border-right: 1px solid;
+}
+img {
+    width: 37px;
+}

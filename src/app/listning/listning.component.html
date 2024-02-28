@@ -1,0 +1,29 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Age</th>
+        <th scope="col">image</th> <!-- Delete button column added -->
+        <th scope="col">Actions</th> <!-- Delete button column added -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of formDataArray">
+        <td>{{ data.email }}</td>
+        <td>{{ data.password }}</td>
+        <td>{{ data.age }}</td>
+        <!-- <td>{{ data.image }}</td> -->
+        <!-- <td><img src="{{ data.image }}" alt="image"></td> -->
+        <td>
+          <div class="d-flex justify-content-center"><img src="{{ data.image }}" alt="image"></div>
+        </td>
+
+        <td>
+          <button class="btn btn-danger" (click)="onDelete(data)">Delete</button> <!-- Delete button -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
